@@ -8,7 +8,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background: #161616;
+	background: #636363;
 }
 
 body,input,textarea,select
@@ -345,7 +345,7 @@ ul.contact li a:hover
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: darkgray;
+	background: #636363;
 }
 
 /*********************************************************************************/

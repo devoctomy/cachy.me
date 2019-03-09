@@ -80,7 +80,7 @@ header .byline
 
 #titleBar
 {
-	background: #161616;
+	background: #636363;
 }
 
 #titleBar .title a
@@ -175,7 +175,7 @@ header .byline
 
 #header
 {
-	height: 10em;
+	height: 22em;
 	padding: 0;
 	background-position: center center;
 	background-attachment: scroll;
@@ -188,16 +188,6 @@ header .byline
 #logo img 
 {
 	width: 96px;
-}
-
-#logo h1
-{
-	display: none;
-}
-
-#logo span
-{
-	display: none;
 }
 
 /*********************************************************************************/
