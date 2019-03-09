@@ -1,0 +1,13 @@
+<div id="nav-wrapper">
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			{% capture current %}{{page.url | downcase | split: '/'}}{% endcapture %}
+			<li {% if current == '' %}class='current'{% endif %}><a href="/">Homepage</a></li>
+			<li {% if current == 'blog' %}class='current'{% endif %}><a href="/blog">Blog</a></li>
+			<li {% if current == 'faqs.html' %}class='current'{% endif %}><a href="/faqs.html">FAQs</a></li>
+			<!-- <li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="/right-sidebar.html">Right Sidebar</a></li> -->
+			<!-- <li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="/no-sidebar.html">No Sidebar</a></li> -->
+		</ul>
+	</nav>
+</div>

@@ -1,0 +1,10 @@
+title: cachy
+description: Cross-Platform Password Protection System
+email: support@devoctomy.com
+paginate: 10
+social:
+  twitter: https://www.twitter.com/devoctomy
+  facebook: https://www.facebook.com/cachyapp
+
+
+gems: [jekyll-paginate]

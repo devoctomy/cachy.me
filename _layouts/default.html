@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+{% include head.html %}
+<body>
+
+	<div id="header">
+		{% include nav.html %}
+		<div class="container">
+			<div id="logo">
+				<img class="icon" src="/assets/images/cachyicon_512.png"></img>
+				<h1 class="title">{{ site.title }}</h1>
+				<span class="tag">{{ site.description }}</span>
+			</div>
+		</div>
+	</div>
+	
+	{{ content }}
+	
+	<div id="footer">
+		<div class="container">
+			<section>
+				<header>
+					<h2>Get in touch</h2>
+				</header>
+				<ul class="contact">
+					<li><a href="{{ site.social.twitter }}" class="fab fa-twitter-square"><span>Twitter</span></a></li>
+					<li><a href="{{ site.social.facebook }}" class="fab fa-facebook"><span>Facebook</span></a></li>
+					<li><a href="mailto:{{ site.email }}" class="fas fa-envelope-open"><span>Email</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<div id="copyright">
+		<div class="container">
+			Copyright © devoctomy 2019</br></br>
+			Jekyll Theme Derived from <a href="https://github.com/old-jekyll-templates/Linear-Jekyll-Theme">'Linear-Jekyll-Theme'</a>
+		</div>
+	</div>
+</body>
+</html>
