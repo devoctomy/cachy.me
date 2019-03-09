@@ -6,5 +6,9 @@ social:
   twitter: https://www.twitter.com/devoctomy
   facebook: https://www.facebook.com/cachyapp
 
-
-gems: [jekyll-paginate]
+# Build settings
+include: ["_categories"]
+exclude: ["Gemfile", "Gemfile.lock", "vendor"]
+markdown: kramdown
+  
+gems: [jekyll-paginate, travis]
