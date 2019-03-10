@@ -102,6 +102,11 @@ footer
 	margin-top: 1em;
 }
 
+subfooter
+{
+	margin-top: 1em;;
+}
+
 br.clear
 {
 	clear: both;
@@ -467,6 +472,22 @@ ul.contact li a:hover
 #footer header .byline
 {
 	color: rgba(255,255,255,.2);
+}
+
+/*********************************************************************************/
+/* Sub-Footer                                                                        */
+/*********************************************************************************/
+	
+#subfooter
+{
+	background: white;
+	position: relative;
+	text-align: center;
+}
+
+#subfooter header .byline
+{
+	color: white;
 }
 
 /*********************************************************************************/
