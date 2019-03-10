@@ -11,18 +11,21 @@ skel.init(
 		{
 			'mobile':
 			{
-				range: '-520',
+				range: '-500',
 				lockViewport: true,
 				containers: 'fluid',
 				grid: {
-					collapse: true,
-					gutters: 10
+					collapse: true
 				}
 			},
 			'desktop':
 			{
-				range: '520-',
-				containers: 1024
+				range: '500-',
+				lockViewport: false,
+				containers: 'fluid',
+				grid: {
+					collapse: false
+				}
 			}
 		}
 	},
