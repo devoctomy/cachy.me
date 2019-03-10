@@ -1,7 +1,6 @@
 title: cachy
 description: Cross-Platform Password Protection System
 email: support@devoctomy.com
-paginate: 10
 social:
   twitter: https://www.twitter.com/devoctomy
   facebook: https://www.facebook.com/cachyapp
@@ -11,4 +10,4 @@ include: ["_categories"]
 exclude: ["Gemfile", "Gemfile.lock", "vendor"]
 markdown: kramdown
   
-plugins: [jekyll-paginate, travis]
+plugins: [travis]
