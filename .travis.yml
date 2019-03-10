@@ -4,7 +4,6 @@ rvm:
 - 2.3.0
 
 before_script:
-- ls
 - chmod +x ./script/cibuild
 
 script: "./script/cibuild"
