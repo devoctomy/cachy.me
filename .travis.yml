@@ -20,7 +20,7 @@ deploy:
   bucket: www.cachy.me
   local-dir: _site
   acl: public_read
-  region: eu-west-1
+  region: eu-west-2
   skip_cleanup: true
   on:
     repo: devoctomy/cachy.me
