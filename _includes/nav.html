@@ -4,6 +4,7 @@
 		<ul>
 			{% capture current %}{{page.url | downcase | split: '/'}}{% endcapture %}
 			<li {% if current == '' %}class='current'{% endif %}><a href="/">Home</a></li>
+			<li {% if current == '' %}class='current'{% endif %}><a href="/#downloads">Downloads</a></li>
 			<li {% if current == 'blog' %}class='current'{% endif %}><a href="/blog">Blog</a></li>
 			<li {% if current == 'faqs.html' %}class='current'{% endif %}><a href="/faqs.html">FAQs</a></li>
 			<!-- <li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="/right-sidebar.html">Right Sidebar</a></li> -->

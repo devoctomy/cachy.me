@@ -437,15 +437,14 @@ ul.contact li a:hover
 {
 	position: relative;
 	background: #fff;
-}
-
-.homepage #content
-{
 	text-align: center;
 }
 
-.homepage #content header h2
+#main header h2
 {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #sidebar h2
@@ -530,6 +529,12 @@ ul.contact li a:hover
 {
 	display: block;
 	font-weight: 300;
+}
+
+#featured .container
+{
+	padding-left: 32px;
+	padding-right: 32px;
 }
 
 #featured .pennant

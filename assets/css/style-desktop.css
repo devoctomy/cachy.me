@@ -113,3 +113,9 @@ header .byline
 	line-height: 2em;
 	font-size: 1.2em;
 }
+
+#featured .container
+{
+	padding-left: 32px;
+	padding-right: 32px;
+}
