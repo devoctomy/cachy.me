@@ -1,0 +1,55 @@
+<script>
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+	  if (this.readyState == 4 && this.status == 200) {
+		var myObj = JSON.parse(this.responseText);
+		var releaseHTML = "";
+		$.each(myObj.Releases, function(ir, release) {
+			//release.Date
+			releaseHTML += "<header>";
+			releaseHTML += "<h2>" + release.Date + "</h2><br/>"
+			releaseHTML += "<h3>" + ir + "</h3>"
+			releaseHTML += "</header><br/>"
+			$.each(release.Changes, function(ic, change) {
+				releaseHTML += '<div class="row">';
+				
+				var typeColour = "";
+				switch(change.Type)
+				{
+					case "Fixed":
+					{
+						typeColour = "purple";
+						break;
+					}
+					case "Changed":
+					{
+						typeColour = "gold";
+						break;
+					}
+					case "Added":
+					{
+						typeColour = "green";
+						break;
+					}
+					case "Removed":
+					{
+						typeColour = "blue";
+						break;
+					}					
+				}
+				
+				releaseHTML += '<section class="4u"><div style="color: white; width: 100px; height: 32px; background-color: ' +typeColour + ';">' + change.Type + '</div></section>';
+				releaseHTML += '<section class="4u">' + change.Summary + '</section>';
+				releaseHTML += '<section class="4u">' + change.Description + '</section>';
+				releaseHTML += "</div>";
+			});
+		});
+		document.getElementById("demo").innerHTML = releaseHTML;
+	  }
+	};
+	xmlhttp.open("GET", "assets/data/changes.json", true);
+	xmlhttp.send();
+</script>
+
+<div id="demo" style="width: 800px; margin-left: auto; margin-right: auto;">
+</div>

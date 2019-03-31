@@ -1,0 +1,196 @@
+﻿{
+  "Releases": {
+    "1.0.3.0": {
+      "Date": "31/03/2019",
+      "Changes": [
+        {
+          "Type": "Fixed",
+          "Date": "31/03/2019",
+          "Summary": "Clipboard obfuscator still runs even though cachy has been closed.",
+          "Description": "Clipboard obfuscator is now stopped when the app window loses focus, and restarted when it gets focus.",
+          "Platform": "Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "31/03/2019",
+          "Summary": "Burger menu expand transition changed.",
+          "Description": "Burger menu now has a slight bounce when opened / closed now, and also the logo are is faded in / out.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "31/03/2019",
+          "Summary": "Audit entry item text is truncated oddly.",
+          "Description": "Changed style of audit lists to be more similar to change logging, so now all text is visible for each item.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "31/03/2019",
+          "Summary": "Additional tokens for new vault filename auto-generation.",
+          "Description": "2 new tokens have been added for the vault filename generation, these are {Name} (Name of the vault) and {ddMMyyyy} the current date; formatted.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "31/03/2019",
+          "Summary": "Cloud providers in 'Create Vault' page are not on screen in lower resolutions.",
+          "Description": "Changed the 'no cloud providers' panel, and all similar panels to have a smaller font and icon, plus changed the sync mode descriptions to be more concise.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "31/03/2019",
+          "Summary": "Wording issue on 'My Vaults' page when no vaults are found.",
+          "Description": "Changed 'yet' to 'here' in order to be explicit about the device the user is on.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "31/03/2019",
+          "Summary": "Vault page shown before vault is fully unlocked.",
+          "Description": "Fixed issue where the vault page is flipped to, even when the passphrase is incorrect.  The vault unlock is now attempted in the vault list page before proceeding.  Also disabled accept button on unlock page until a passphrase is entered.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "30/03/2019",
+          "Summary": "Auto-save functionality.",
+          "Description": "Added auto-save functionality that can be enabled to requirement. This makes it more convenient when adding new credentials and using straight away, without having to first lock your valut to save it.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "30/03/2019",
+          "Summary": "Entering invalid data into numerical settings fields crashes the app.",
+          "Description": "Erroneous input is now handled on all textboxes requiring an integer value to be entered within the settings page.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "30/03/2019",
+          "Summary": "Change log items turn blue when clicked.",
+          "Description": "Removed selection ability from change log list, as it's not needed.  Mouse-over is still turning them grey, will address this at a later date.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "30/03/2019",
+          "Summary": "Cannot reveal confirmation password of credential editor.",
+          "Description": "Password reveal button for password entry, now operates confirmation password entry as well as its own state.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "30/03/2019",
+          "Summary": "Password entry views remember their reveal state.",
+          "Description": "Password entry views reveal state is now reset as expected.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "24/03/2019",
+          "Summary": "Switching between about and settings fills the navigation history.",
+          "Description": "Changed navigation so that if the current item is common, as is the last, the last common item is removed from the history stack.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "24/03/2019",
+          "Summary": "OAuth web browser page has large margin at the bottom.",
+          "Description": "The bottom margin has been removed and code has been put in place to supposedly adjust the window when the Android keyboard is visible (flakey).",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "24/03/2019",
+          "Summary": "Cloud provider configuration appears crashed when selecting a provider.",
+          "Description": "The 'connecting' message is now displayed the second you select a provider to prevent it looking like the app has crashed.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Removed",
+          "Date": "24/03/2019",
+          "Summary": "Drop shadows on burger menu look odd, especially on Android.",
+          "Description": "Some of the frames within the burger menu had shadows enabled erroneously, these have been removed.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "24/03/2019",
+          "Summary": "Edge of password reveal glyph slightly truncated.",
+          "Description": "Slight modifications to the glyph button control so that the entire glyph is visible.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "24/03/2019",
+          "Summary": "Burger menu common items stay enabled even when on the page.",
+          "Description": "The common items are now enabled / disabled depending on what page you're on. This prevents the user from selecting the same item multiple times and causing confusion whilst navigating back again.",
+          "Platform": "UWP,Android"
+        }
+      ]
+    },
+    "1.0.2.0": {
+      "Date": "23/03/2019",
+      "Changes": [
+        {
+          "Type": "Changed",
+          "Date": "23/03/2019",
+          "Summary": "Password entry fields require a 'show/reveal' option.",
+          "Description": "A new control was created to replace the existing password entry control.  This one has the option to reveal the password behind the asterisks.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "23/03/2019",
+          "Summary": "Crerdentials cannot be duplicated.",
+          "Description": "Added option to duplicate existing credentials that can then be edited.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "22/03/2019",
+          "Summary": "Clipboard Obfuscator.",
+          "Description": "Added new advanced setting for Clipboard Obfuscator. This feature will help protect against malware monitoring clipboard activity.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "17/03/2019",
+          "Summary": "Test change for UI testing.",
+          "Description": "This is a test change item to simply test what it looks like in the UI.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "17/03/2019",
+          "Summary": "Test change for UI testing.",
+          "Description": "This is a test change item to simply test what it looks like in the UI.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "17/03/2019",
+          "Summary": "Test change for UI testing.",
+          "Description": "This is a test change item to simply test what it looks like in the UI.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Removed",
+          "Date": "17/03/2019",
+          "Summary": "Test change for UI testing.",
+          "Description": "This is a test change item to simply test what it looks like in the UI.",
+          "Platform": "UWP,Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "17/03/2019",
+          "Summary": "Change logging.",
+          "Description": "Added changing logging to cachy to keep users informed of all app updates, this can be accessed through the 'About' page.",
+          "Platform": "UWP,Android"
+        }
+      ]
+    }
+  }
+}
