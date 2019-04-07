@@ -1,5 +1,80 @@
 ﻿{
   "Releases": {
+    "1.0.4.0": {
+      "Date": "07/04/2019",
+      "Changes": [
+        {
+          "Type": "Added",
+          "Date": "06/04/2019",
+          "Summary": "First run wizard.",
+          "Description": "Created a wizard to guide the new user through the setup of cachy and optional creation of their first vault.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "05/04/2019",
+          "Summary": "Modular JSON serialisation.",
+          "Description": "The underlying data serialisation classes have been made modular in order to help future changes to the format whilst reducing the risk of breaking changes.  The version used to write the JSON is first used to read, then the latest version is used to write, silently upgrading JSON format.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "05/04/2019",
+          "Summary": "Removing storage provider that's in use, causes startup crash.",
+          "Description": "When a storage provider that's in use is removed, the associated vault is also removed.  The user is notified first.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "05/04/2019",
+          "Summary": "Password Age.",
+          "Description": "Password age can now be optionally show on the credentials within the vault view. This shows the number of days since the password was last changed.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "05/04/2019",
+          "Summary": "Credential Sorting.",
+          "Description": "Credentials can now be sorted by a selection of fields and ascending / descending.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "04/04/2019",
+          "Summary": "Amazon S3 Support.",
+          "Description": "You can now synchronise your cachy vault with an Amazon S3 bucket.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "03/04/2019",
+          "Summary": "Some settings tabs unusable on small screens.",
+          "Description": "All tabs except the sync tab now include scrollviews to stop the controls becoming squashed up and unusable on small displays.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "03/04/2019",
+          "Summary": "Browse to website.",
+          "Description": "You can now open the website associated with a credential in the device default browser by holding/right clicking on the credential and selecting 'Browse to website...'. There is also a new setting for this that will automatically prefix a protocol of your choosing to the website url, this means you can enter just 'www.somewebsite.com' and still browse to it.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "02/04/2019",
+          "Summary": "Improved search",
+          "Description": "Search now supports tags, by prefixing with the '#' symbol. Separate search terms by a space.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "02/04/2019",
+          "Summary": "Credential tags.",
+          "Description": "Tags can now be added to each credential.",
+          "Platform": "UWP, Android"
+        }
+      ]
+    },
     "1.0.3.0": {
       "Date": "31/03/2019",
       "Changes": [
