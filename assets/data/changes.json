@@ -1,5 +1,80 @@
 ﻿{
   "Releases": {
+    "1.0.5.0": {
+      "Date": "13/04/2019",
+      "Changes": [
+        {
+          "Type": "Fixed",
+          "Date": "13/04/2019",
+          "Summary": "Crash when adding cloud vault",
+          "Description": "Fixed crash from occurring when adding several cloud vaults in succession on Android.",
+          "Platform": "Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "13/04/2019",
+          "Summary": "App Reset",
+          "Description": "Application reset now just renames the 4 configuration files, if they exist.  No files are deleted.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "13/04/2019",
+          "Summary": "Startup flow re-structure.",
+          "Description": "The startup flow has been restructured so that the landing page 'tap to begin' is displayed before any substantial code is processed. Tapping to begin will start the application code.  This is to help against any potential startup issues, and as such a button has been added to the bottom of the landing page to help diagnose/fix startup issues.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "12/04/2019",
+          "Summary": "Vault synchronisation only works on 'My Vaults' page.",
+          "Description": "Vault synchronisation will now occur on any page, starting with 'My Vaults' page.  The currently opened vault won't be synchronised, and now there's a new sync indicator at the top right of the 'My Vaults' page.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "11/04/2019",
+          "Summary": "Intermittent crash after adding / removing vault.",
+          "Description": "Fixed issue where if a vault was added / removed whilst synchronisation was taking place, cachy would crash due to the vault index collection changing.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "08/04/2019",
+          "Summary": "Vault / credential context menu message.",
+          "Description": "Added a small message at the bottome of the vault / credential lists that inform the user of the context menu on vaults and credentials.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "08/04/2019",
+          "Summary": "Cloud provider connecting message.",
+          "Description": "When an OAuth cloud provider is selected, due to the delay while the process is started, a 'connecting' message is displayed to prevent the user clicking on other stuff and thinking the app has crashed.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "08/04/2019",
+          "Summary": "Added supported cloud providers to cloud sync mode description.",
+          "Description": "Added the currently supported cloud provider names to the sync mode page in the first run wizard, so the user can see without first pressing 'cloud'.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "08/04/2019",
+          "Summary": "Added swipe direction text to first run wizard.",
+          "Description": "The 'first run wizard' said 'swipe to begin' etc, it now says 'swipe left' everywhere that it says to swipe.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Removed",
+          "Date": "08/04/2019",
+          "Summary": "Website field removed from quick access panel.",
+          "Description": "The website field in the credential quick access panel was mapping to the password field.  But as you can browse to the website directly via the credential context menu anyway, this field is not-required within the quick access panel so has been removed.",
+          "Platform": "UWP, Android"
+        }
+      ]
+    },
     "1.0.4.0": {
       "Date": "07/04/2019",
       "Changes": [
