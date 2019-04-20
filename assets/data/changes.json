@@ -1,5 +1,24 @@
 ﻿{
   "Releases": {
+    "1.0.6.0": {
+      "Date": "20/04/2019",
+      "Changes": [
+        {
+          "Type": "Fixed",
+          "Date": "14/04/2019",
+          "Summary": "Cloud file select last modified time not displayed correctly",
+          "Description": "Fixed issue where datetime converter wasn't being used by UI element so the time shown was in UTC, it's now converted to local time correctly.",
+          "Platform": "Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "18/04/2019",
+          "Summary": "Help Center button directs to wrong site",
+          "Description": "I changed the helpdesk service, so now instead of the URL being in the app, it now opens a browser page to http://www.devoctomy.com/support which then redirects to the current support service.",
+          "Platform": "Android"
+        }
+      ]
+    },
     "1.0.5.0": {
       "Date": "13/04/2019",
       "Changes": [
