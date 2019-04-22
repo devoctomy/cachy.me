@@ -1,5 +1,31 @@
 ﻿{
   "Releases": {
+    "1.0.7.0": {
+      "Date": "22/04/2019",
+      "Changes": [
+        {
+          "Type": "Fixed",
+          "Date": "22/04/2019",
+          "Summary": "Import custom CSV UI misaligned",
+          "Description": "Made some minor changes to the custom CSV import UI as it looked bad on mobile.",
+          "Platform": "Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "22/04/2019",
+          "Summary": "Clipboard obfuscator restart exception",
+          "Description": "Fixed issue where clipboard obfuscator would fail to restart after copying a credential field to the clipboard.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "22/04/2019",
+          "Summary": "Export to CSV not saving ZIP password",
+          "Description": "Fixed issue where the password for the exported CSV ZIP file was not added to the vault on Android.  Plus auto-save wasn't being applied when necessary.",
+          "Platform": "Android"
+        }
+      ]
+    },
     "1.0.6.0": {
       "Date": "20/04/2019",
       "Changes": [
@@ -8,14 +34,14 @@
           "Date": "14/04/2019",
           "Summary": "Cloud file select last modified time not displayed correctly",
           "Description": "Fixed issue where datetime converter wasn't being used by UI element so the time shown was in UTC, it's now converted to local time correctly.",
-          "Platform": "Android"
+          "Platform": "UWP, Android"
         },
         {
           "Type": "Changed",
           "Date": "18/04/2019",
           "Summary": "Help Center button directs to wrong site",
           "Description": "I changed the helpdesk service, so now instead of the URL being in the app, it now opens a browser page to http://www.devoctomy.com/support which then redirects to the current support service.",
-          "Platform": "Android"
+          "Platform": "UWP, Android"
         }
       ]
     },
