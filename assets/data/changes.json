@@ -1,5 +1,87 @@
-﻿{
+{
   "Releases": {
+    "1.1.0.0": {
+      "Date": "15/05/2019",
+      "Changes": [
+        {
+          "Type": "Added",
+          "Date": "27/04/2019",
+          "Summary": "New 'Test Settings' button to advanced settings tab.",
+          "Description": "Added a new button to the advanced settings tab that allows you to be able to test how long it takes to generate 10 keys using the current password derivation settings.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Fixed",
+          "Date": "28/04/2019",
+          "Summary": "Digits not included in password generator.",
+          "Description": "Fixed issue where password generator was not including digits even when selected.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "28/04/2019",
+          "Summary": "Improved password generator.",
+          "Description": "Password generator is now greatly improved, it can now generate memorable passwords using a customisable format and assure that at least 1 of each selected character group is included with non-memorable passwords.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "28/04/2019",
+          "Summary": "Raised min API level to 23.",
+          "Description": "App was failing to start correctly on anything lower than API level 23 due to missing AES provider so the minimum level has been raised to 23.",
+          "Platform": "Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "28/04/2019",
+          "Summary": "Landing page message not visible.",
+          "Description": "On small screen sizes the 'Tap to begin' landing page message isn't visible, so the logo has been made smaller to be suitable for 4.7 inch screens.",
+          "Platform": "Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "07/05/2019",
+          "Summary": "Password strength indicator.",
+          "Description": "Added a password strength indicator to the password entry views",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "07/05/2019",
+          "Summary": "Weak password dictionary lookup",
+          "Description": "Added a weak password dictionary consisting of roughly 5 million entries.  The password strength indicator uses this as part of its strength detection, details will be posted to the knowledge-base.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "08/05/2019",
+          "Summary": "Security Alert",
+          "Description": "Security alerts are now displayed when accepting a credential that has a weak or reused password.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Added",
+          "Date": "11/05/2019",
+          "Summary": "Vault Report",
+          "Description": "Added new option to produce a report on a vault by analysing all of the credentials and display any points of concern.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "11/05/2019",
+          "Summary": "Improved Searching",
+          "Description": "Improved searching, filtering and sorting mechanism so that it is faster and now more durable.  You can now search for credentials that are found in the Vault report, using @reused, @known, @weak and @old.  You can also optionally include the number of days for old credentials using @old:n, where n is the number of days since the password was last changed.",
+          "Platform": "UWP, Android"
+        },
+        {
+          "Type": "Changed",
+          "Date": "12/05/2019",
+          "Summary": "Old Days",
+          "Description": "Added new app setting for specifying the number of days before a credential is considered to be 'old'.  This value is used in the vault reports and the default value for @old search queries.",
+          "Platform": "UWP, Android"
+        }
+      ]
+    },
     "1.0.7.0": {
       "Date": "22/04/2019",
       "Changes": [
